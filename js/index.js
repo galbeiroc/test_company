@@ -1,3 +1,4 @@
+//Slide
 let sliderImages = document.querySelectorAll('.slide'),
     arrowLeft = document.querySelector('#arrow-left'),
     arrowRight = document.querySelector('#arrow-right'),
@@ -49,3 +50,31 @@ arrowRight.addEventListener('click', () =>{
 startSlide();
 
 
+
+//Tabs
+function openServices(evt, serviceTab) {
+    let i, tabcontent, servicesTablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    servicesTablinks = document.getElementsByClassName("services-tablinks");
+    for (i = 0; i < servicesTablinks.length; i++) {
+        servicesTablinks[i].className = servicesTablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(serviceTab).style.display = "block";
+    evt.currentTarget.className += " active";
+
+  }
+  document.getElementById("defaultOpen").click();
+
+  //hide and show remanind info service
+  function hideAndShow() {
+    let x = document.getElementById("rest-info");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+
+    } else {
+      x.style.display = "none";
+    }
+  }

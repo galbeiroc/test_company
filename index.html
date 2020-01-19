@@ -65,6 +65,169 @@
       <i id="arrow-right" class="arrow fas fa-chevron-right"></i>
     </header>
 
+    <section class="services">
+      <div class="star-down">
+        <i class="fas fa-long-arrow-alt-down"></i>
+        <div class="line-down"></div>
+      </div>
+      <div class="services-content">
+        <h4 class="services-subheading">bringing you proven results</h4>
+        <h1 class="services-heading">our services</h1>
+        <div class="services-line">
+          <div class="line-left"></div>
+          <i class="fas fa-star"></i>
+          <div class="line-right"></div>
+        </div>
+        <p class="services-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias
+          inventore molestias.
+        </p>
+      </div>
+
+      <div class="services-tabs">
+        <div
+          class="services-tablinks"
+          onclick="openServices(event, 'Marketing')"
+          id="defaultOpen"
+        >
+          <p class="services-tabs-subheading">Reach new audences</p>
+          <p class="services-tabs-heading">Marketing</p>
+        </div>
+        <div
+          class="services-tablinks"
+          onclick="openServices(event, 'Advertising')"
+        >
+          <p class="services-tabs-subheading">Expand your identity</p>
+          <p class="services-tabs-heading">Advertising</p>
+        </div>
+        <div class="services-tablinks" onclick="openServices(event, 'Cloud')">
+          <p class="services-tabs-subheading">Stay safe and secure</p>
+          <p class="services-tabs-heading">Cloud Store</p>
+        </div>
+        <div
+          class="services-tablinks"
+          onclick="openServices(event, 'Consulting')"
+        >
+          <p class="services-tabs-subheading">Maximixe your ROI</p>
+          <p class="services-tabs-heading">Consulting</p>
+        </div>
+      </div>
+
+      <div class="services-content-tabs">
+        <div id="Marketing" class="tabcontent">
+          <h3 class="services-title">
+            Marketing<i class="fas fa-code-branch"></i>
+          </h3>
+          <p class="services-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            nihil itaque ea accusamus laudantium quia, recusandae reprehenderit
+            ratione, praesentium quam minima animi non ad voluptatibus nobis.
+            Ipsum officiis omnis sint odit recusandae cumque quam iusto, aliquid
+            sequi repudiandae, officia assumenda hic maiores voluptates itaque
+            fugit quis temporibus excepturi exercitationem? Vel neque, itaque
+            explicabo molestiae architecto nobis laudantium excepturi in? Ad
+            omnis facilis quidem velit dolorum optio, amet quasi placeat quo
+            tempore, accusamus esse! Expedita alias magnam quo perferendis
+            nesciunt aliquid quas, cum error repellat quod odit, sunt esse
+            dignissimos sit unde placeat minima ex, eos sapiente harum officia
+            minus provident!
+          </p>
+          <p class="services-description" id="rest-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem
+            autem sint esse voluptas laboriosam qui illum eveniet deserunt
+            dignissimos, excepturi ducimus corrupti, consequuntur pariatur, ea
+            nobis itaque vero saepe. Quia minus labore, similique voluptatibus
+            numquam eos repudiandae totam expedita ipsum illo. Eveniet
+            repudiandae dolor sapiente, doloribus voluptatibus cupiditate quasi?
+          </p>
+          <button class="hide-description" onclick="hideAndShow()"><i class="fas fa-chevron-up"></i></button>
+        </div>
+        <div id="Advertising" class="tabcontent">
+          <h3 class="services-title">
+            Advertising<i class="fab fa-adversal"></i>
+          </h3>
+          <p class="services-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            nihil itaque ea accusamus laudantium quia, recusandae reprehenderit
+            ratione, praesentium quam minima animi non ad voluptatibus nobis.
+            Ipsum officiis omnis sint odit recusandae cumque quam iusto, aliquid
+            sequi repudiandae, officia assumenda hic maiores voluptates itaque
+            fugit quis temporibus excepturi exercitationem? Vel neque, itaque
+            explicabo molestiae architecto nobis laudantium excepturi in? Ad
+            omnis facilis quidem velit dolorum optio, amet quasi placeat quo
+            tempore, accusamus esse! Expedita alias magnam quo perferendis
+            nesciunt aliquid quas, cum error repellat quod odit, sunt esse
+            dignissimos sit unde placeat minima ex, eos sapiente harum officia
+            minus provident!
+          </p>
+          <p class="services-description" id="rest-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem
+            autem sint esse voluptas laboriosam qui illum eveniet deserunt
+            dignissimos, excepturi ducimus corrupti, consequuntur pariatur, ea
+            nobis itaque vero saepe. Quia minus labore, similique voluptatibus
+            numquam eos repudiandae totam expedita ipsum illo. Eveniet
+            repudiandae dolor sapiente, doloribus voluptatibus cupiditate quasi?
+          </p>
+          <button class="hide-description" onclick="hideAndShow()"><i class="fas fa-chevron-up"></i></button>
+        </div>
+        <div id="Cloud" class="tabcontent">
+          <h3 class="services-title">
+            Cloud Store<i class="fas fa-cloud"></i>
+          </h3>
+          <p class="services-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            nihil itaque ea accusamus laudantium quia, recusandae reprehenderit
+            ratione, praesentium quam minima animi non ad voluptatibus nobis.
+            Ipsum officiis omnis sint odit recusandae cumque quam iusto, aliquid
+            sequi repudiandae, officia assumenda hic maiores voluptates itaque
+            fugit quis temporibus excepturi exercitationem? Vel neque, itaque
+            explicabo molestiae architecto nobis laudantium excepturi in? Ad
+            omnis facilis quidem velit dolorum optio, amet quasi placeat quo
+            tempore, accusamus esse! Expedita alias magnam quo perferendis
+            nesciunt aliquid quas, cum error repellat quod odit, sunt esse
+            dignissimos sit unde placeat minima ex, eos sapiente harum officia
+            minus provident!
+          </p>
+          <p class="services-description" id="rest-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem
+            autem sint esse voluptas laboriosam qui illum eveniet deserunt
+            dignissimos, excepturi ducimus corrupti, consequuntur pariatur, ea
+            nobis itaque vero saepe. Quia minus labore, similique voluptatibus
+            numquam eos repudiandae totam expedita ipsum illo. Eveniet
+            repudiandae dolor sapiente, doloribus voluptatibus cupiditate quasi?
+          </p>
+          <button class="hide-description" onclick="hideAndShow()"><i class="fas fa-chevron-up"></i></button>
+        </div>
+        <div id="Consulting" class="tabcontent">
+          <h3 class="services-title">
+            Consulting<i class="fab fa-staylinked"></i>
+          </h3>
+          <p class="services-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            nihil itaque ea accusamus laudantium quia, recusandae reprehenderit
+            ratione, praesentium quam minima animi non ad voluptatibus nobis.
+            Ipsum officiis omnis sint odit recusandae cumque quam iusto, aliquid
+            sequi repudiandae, officia assumenda hic maiores voluptates itaque
+            fugit quis temporibus excepturi exercitationem? Vel neque, itaque
+            explicabo molestiae architecto nobis laudantium excepturi in? Ad
+            omnis facilis quidem velit dolorum optio, amet quasi placeat quo
+            tempore, accusamus esse! Expedita alias magnam quo perferendis
+            nesciunt aliquid quas, cum error repellat quod odit, sunt esse
+            dignissimos sit unde placeat minima ex, eos sapiente harum officia
+            minus provident!
+          </p>
+          <p class="services-description" id="rest-info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem
+            autem sint esse voluptas laboriosam qui illum eveniet deserunt
+            dignissimos, excepturi ducimus corrupti, consequuntur pariatur, ea
+            nobis itaque vero saepe. Quia minus labore, similique voluptatibus
+            numquam eos repudiandae totam expedita ipsum illo. Eveniet
+            repudiandae dolor sapiente, doloribus voluptatibus cupiditate quasi?
+          </p>
+          <button class="hide-description" onclick="hideAndShow()"><i class="fas fa-chevron-up"></i></button>
+        </div>
+      </div>
+    </section>
     <script src="./js/index.js"></script>
   </body>
 </html>
