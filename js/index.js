@@ -42,7 +42,7 @@ arrowLeft.addEventListener('click', () =>{
 //Right arrow click
 arrowRight.addEventListener('click', () =>{
     if (current === sliderImages.length-1) {
-        current = 1;
+        current = -1;
     }
     slideRight();
 })
