@@ -19,6 +19,29 @@ body,
 .header {
   position: relative;
 }
+.menu {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  cursor: pointer;
+  top: 3.5rem;
+  right: 5rem;
+}
+
+.menu-heading {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.line {
+  height: 0.2rem;
+  width: 1.5rem;
+  background-color: #fff;
+  margin-bottom: 0.2rem;
+  margin-left: 0.3rem;
+}
 
 .slide {
   background-size: cover;
@@ -27,43 +50,90 @@ body,
 }
 
 .slide1 {
-    background-image: url('/img/img-1.jpg');
+  background-image: url('/img/img-1.jpg');
 }
 .slide2 {
-    background-image: url('/img/img-2.jpg');
+  background-image: url('/img/img-2.jpg');
 }
 .slide3 {
-    background-image: url('/img/img-3.jpg');
+  background-image: url('/img/img-3.jpg');
 }
 
 .slide-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .slide-content span {
-    font-size: 5rem;
-    color: #ffffff;
+  font-size: 5rem;
+  color: #ffffff;
 }
 
-.fas {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    color: #ffffff;
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  color: #ffffff;
 }
 
 .fa-chevron-left {
-    font-size: 2rem;
-    left: 0;
-    margin-top: -35px;
-    margin-left: 30px;
+  font-size: 2rem;
+  left: 0;
+  margin-top: -35px;
+  margin-left: 30px;
 }
 .fa-chevron-right {
-    font-size: 2rem;
-    right: 0;
-    margin-right: 30px;
+  font-size: 2rem;
+  right: 0;
+  margin-right: 30px;
 }
+
+.slide-heading {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+}
+
+.slide-subheading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 0.2rem;
+}
+
+.slide-content-heading {
+    border-top: 0.4rem solid #ffffff;
+    border-bottom: 0.4rem solid #ffffff;
+}
+
+.slide-paragraph {
+    margin: 4rem 0;
+    color: #ffffff;
+}
+
+.btn-started {
+    background: transparent;
+    color: #ffffff;
+    border: 0.1rem solid #fff;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    width: 10rem;
+    outline: none;
+    transition: all 0.5s;
+}
+.btn-started:hover {
+    color: #5cc9c1;
+    border: 0.1rem solid #5cc9c1 ;
+    cursor: pointer;
+}
+
